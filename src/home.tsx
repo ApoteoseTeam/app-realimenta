@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 export default function App() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <Text style={styles.title}>
         Realimenta
@@ -12,6 +13,7 @@ export default function App() {
         Nosso projeto Demo Day!
       </Text>
     </View>
+    </ScrollView>
   );
 }
 
