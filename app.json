@@ -1,11 +1,17 @@
 {
   "expo": {
-    "name": "app-realimenta",
+    "name": "realimenta",
     "slug": "app-realimenta",
+    "owener": "apoteose-team",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "web": {
+  "bundler": "metro",
+  "output": "single",
+  "favicon": "./assets/favicon.png"
+},
     "ios": {
       "supportsTablet": true
     },
@@ -18,9 +24,6 @@
       },
       "predictiveBackGestureEnabled": false,
       "package": "com.guilhermesandrade.apprealimenta"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
