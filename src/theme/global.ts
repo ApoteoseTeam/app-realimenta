@@ -39,4 +39,12 @@ export const globalStyles = StyleSheet.create({
     fontSize: typography.sizes.body,
     fontWeight: typography.weights.bold,
   },
+
+   input: {
+    backgroundColor: colors.surface,
+    padding: spacing.md,
+    borderRadius: 8,
+    fontSize: typography.sizes.body,
+    color: colors.text,
+  },
 });

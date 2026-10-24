@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { globalStyles } from './theme/global'; 
 import {Button} from './components/button'
+import { Input } from './components/input';
 export default function App() {
   return (
     <ScrollView>
@@ -15,6 +16,8 @@ export default function App() {
       </Text>
 
       <Button label = "Cadastro"/>
+      <br/>
+      <Input placeholder="Digite seu e-mail" keyboardType="email-address"/>
     </View>
     </ScrollView>
   );
