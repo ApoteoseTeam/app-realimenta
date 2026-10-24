@@ -13,6 +13,7 @@ export default function App() {
       <Text style={globalStyles.subtitle}>
         Nosso projeto Demo Day!
       </Text>
+
       <Button label = "Entrar"/>
     </View>
     </ScrollView>
