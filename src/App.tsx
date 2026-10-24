@@ -14,7 +14,7 @@ export default function App() {
         Nosso projeto Demo Day!
       </Text>
 
-      <Button label = "Entrar"/>
+      <Button label = "Cadastro"/>
     </View>
     </ScrollView>
   );
