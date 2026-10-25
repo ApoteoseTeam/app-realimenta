@@ -72,6 +72,28 @@ export const globalStyles = StyleSheet.create({
   fontWeight: typography.weights.bold,
   lineHeight: 20,
   textAlign: "center",
+  },
 
-  }
+  cardContainer: {
+    backgroundColor: colors.background,
+    padding: spacing.md,
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: colors.border
+
+  },
+
+  cardTitle: { 
+  fontSize: typography.sizes.title,
+  fontWeight: typography.weights.bold,
+  color: colors.primary
+
+  },
+
+  cardDescription: {
+  fontSize: typography.sizes.subtitle,
+  lineHeight: 26,
+  marginTop: spacing.sm,
+  color: colors.secondary
+  },
 });
