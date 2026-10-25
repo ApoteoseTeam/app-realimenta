@@ -10,7 +10,7 @@ type CardProps = {
 
 export const Card = ({ title, description, children }: CardProps) => {
     return (
-        <View style={globalStyles.cardContainer}>
+        <View style={globalStyles.cardContainer}  accessibilityRole="header">
             <Text style={globalStyles.cardTitle}>{title}</Text>
             <Text style={globalStyles.cardDescription}>{description}</Text>
             {children }
