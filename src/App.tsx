@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { globalStyles } from './theme/global'; 
-import {Button} from './components/button'
+import { Button } from './components/button';
 import { Input } from './components/input';
 export default function App() {
   return (

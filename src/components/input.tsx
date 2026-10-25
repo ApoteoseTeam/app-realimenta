@@ -3,7 +3,7 @@ import { globalStyles } from "../theme/global"
 
 type InputProps = TextInputProps;
 
-export function Input({ style, ...rest }: InputProps) {
+export const Input = ({ style, ...rest }: InputProps) => {
   return (
     <TextInput
       style={[globalStyles.input, style]}

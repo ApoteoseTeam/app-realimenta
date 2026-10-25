@@ -40,7 +40,7 @@ export const globalStyles = StyleSheet.create({
     fontWeight: typography.weights.bold,
   },
 
-   input: {
+    input: {
     backgroundColor: colors.surface,
     padding: spacing.md,
     borderRadius: 8,
