@@ -3,7 +3,10 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { globalStyles } from './theme/global'; 
 import { Button } from './components/button';
 import { Input } from './components/input';
+import { Checkbox } from './components/Checkbox';
+import { useState } from 'react';
 export default function App() {
+  const [checked, setChecked] = useState(false);
   return (
     <ScrollView>
     <View style={globalStyles.container}>
@@ -16,9 +19,12 @@ export default function App() {
       </Text>
 
       <Button label = "Cadastro"/>
-      <br/>
       <Input placeholder="Digite seu e-mail" keyboardType="email-address"/>
-    </View>
+    <Checkbox text = "Sim ou Não"
+    checked={checked}
+    onChange={setChecked}
+      />
+      </View> 
     </ScrollView>
   );
 }
