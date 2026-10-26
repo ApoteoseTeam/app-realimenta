@@ -2,13 +2,18 @@ import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { globalStyles } from './theme/global'; 
 
+
+
+
 //Tipos de icones de botões
 import { Bell, Pencil, Trash2, ChevronLeft, ChevronRight, Send, } from 'lucide-react-native';
 
 import { Button } from './components/button';
 import { Input } from './components/input';
 import { Checkbox } from './components/Checkbox';
-import { IconButton } from './components/iconbuttons/IconButton'
+import { IconButton } from './components/iconbuttons/IconButton';
+import { Logo } from './components/Logo';
+
 
 import { useState } from 'react';
 export default function App() {
@@ -17,26 +22,49 @@ export default function App() {
     <ScrollView>
     <View style={globalStyles.container}>
       <Text style={globalStyles.title}>
-        Realimenta
+        Essa Página é para testar componentes criados
       </Text>
 
       <Text style={globalStyles.subtitle}>
         Nosso projeto Demo Day!
       </Text>
 
+      <Text style={globalStyles.title}>
+        Botão:
+      </Text>
       <Button label = "Cadastro"/>
+
+      <Text style={globalStyles.title}>
+        Input:
+      </Text>
       <Input placeholder="Digite seu e-mail" keyboardType="email-address"/>
 
+      <Text style={globalStyles.title}>
+        Checkbox:
+      </Text>
     <Checkbox text = "Sim ou Não"
     checked={checked}
     onChange={setChecked}
       />
+
+      <Text style={globalStyles.title}>
+        IconButtons:
+      </Text>
       <IconButton icon={Bell} onPress={() => console.log('Notificações')} />
       <IconButton icon={Pencil} onPress={() => console.log('Editar')} />
       <IconButton icon={Trash2} onPress={() => console.log('Lixeira')} />
       <IconButton icon={ChevronLeft} onPress={() => console.log('Seta esquerda')} />
       <IconButton icon={ChevronRight} onPress={() => console.log('Seta direita')} />
       <IconButton icon={Send} onPress={() => console.log('Enviar')} />
+
+      <Text style={globalStyles.title}>
+        Logo:
+      </Text>
+      <Logo/>
+
+      <Text style={globalStyles.title}>
+        Essa Página é para testar componentes criados
+      </Text>
       </View> 
     </ScrollView>
   );

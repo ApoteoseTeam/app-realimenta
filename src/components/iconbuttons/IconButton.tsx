@@ -1,7 +1,6 @@
 import { Pressable } from "react-native"
 import type { LucideIcon } from 'lucide-react-native';
 import { IconButtonStyle } from "./styles"
-import { useState } from 'react';
 
 interface IconButtonProps {
   icon: LucideIcon;
