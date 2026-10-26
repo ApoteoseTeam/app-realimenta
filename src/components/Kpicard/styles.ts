@@ -51,15 +51,15 @@ export const kpicardStyles = StyleSheet.create({
         marginTop: spacing.sm,
     },
 
-    kpicardChangePositive: {
-        color: "#16A34A"
+    kpicardChangeFavorable: {
+        color: colors.favorable,
     },
 
-    kpicardChangeNegative: {
-        color: "#DC2626",
+    kpicardChangeUnfavorable: {
+        color: colors.favorable,
     },
 
     kpicardChangeNeutral: {
-        color: colors.textSecondary,
+        color: colors.neutral,
     },
 });
