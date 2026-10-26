@@ -40,3 +40,4 @@ export const globalStyles = StyleSheet.create({
     fontWeight: typography.weights.bold,
   },
 });
+

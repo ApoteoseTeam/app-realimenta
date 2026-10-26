@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, ScrollView } from "react-native";
-import { globalStyles } from './theme/global'; 
+import { globalStyles } from './theme/global'
+
+
+
 
 export default function App() {
   return (
     <ScrollView>
     <View style={globalStyles.container}>
       <Text style={globalStyles.title}>
-        Realimenta
+        Realimenta B
       </Text>
 
       <Text style={globalStyles.subtitle}>
