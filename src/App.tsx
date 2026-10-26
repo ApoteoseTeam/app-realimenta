@@ -1,22 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { globalStyles } from './theme/global'
-
-
-
+import { useState } from 'react';
 
 export default function App() {
   return (
     <ScrollView>
-    <View style={globalStyles.container}>
-      <Text style={globalStyles.title}>
-        Realimenta B
-      </Text>
-
-      <Text style={globalStyles.subtitle}>
-        Nosso projeto Demo Day!
-      </Text>
-    </View>
+      <View>
+        
+      </View>
     </ScrollView>
   );
 }
