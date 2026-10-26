@@ -13,11 +13,13 @@ import { Input } from './components/input';
 import { Checkbox } from './components/Checkbox';
 import { IconButton } from './components/iconbuttons/IconButton';
 import { Logo } from './components/Logo';
+import { Select } from './components/select/Select'
 
 
 import { useState } from 'react';
 export default function App() {
   const [checked, setChecked] = useState(false);
+  const [categoria, setCategoria] = useState("");
   return (
     <ScrollView>
     <View style={globalStyles.container}>
@@ -63,7 +65,23 @@ export default function App() {
       <Logo/>
 
       <Text style={globalStyles.title}>
-        Essa Página é para testar componentes criados
+        Select:
+      </Text>
+
+      <Select
+        label="Categoria do alimento"
+        options={[
+          "Grãos e cereais",
+          "Frutas",
+          "Hortaliças",
+          "Carnes",
+        ]}
+        value={categoria}
+        onChange={setCategoria}
+      />
+
+      <Text style={globalStyles.subtitle}>
+        Selecionado: {categoria || "Nenhum"}
       </Text>
       </View> 
     </ScrollView>
