@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { colors } from '../theme/colors';
 import { typography } from '../theme/typography';
 import { spacing } from '../theme/spacing';
@@ -8,6 +8,7 @@ const FONT = 'Arial';
 
 export default function TelaInicial() {
   return (
+    <ScrollView>
     <View style={styles.container}>
       <View style={styles.spacer} />
 
@@ -22,7 +23,8 @@ export default function TelaInicial() {
         </View>
         <Text style={styles.loadingText}>Iniciando...</Text>
       </View>
-    </View>
+    </View> 
+    </ScrollView>
   );
 }
 
