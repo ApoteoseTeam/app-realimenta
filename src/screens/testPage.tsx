@@ -23,6 +23,7 @@ import { Select } from '../components/select/Select';
 import { Skeleton } from "../components/Skeleton/skeleton";
 import { Chip } from "../components/Chip/Chip";
 import { PreparationRow } from "../components/PreparationRow/PreparationRow";
+import { Header } from '../components/header/header'
 
 export default function testPage() {
   const [checked, setChecked] = useState(false);
@@ -31,6 +32,7 @@ export default function testPage() {
   return (
     <ScrollView>
       <View style={globalStyles.container}>
+        <Header name="Dashboard"/>
         <Text style={globalStyles.title}>
           Essa Página é para testar componentes criados
         </Text>
