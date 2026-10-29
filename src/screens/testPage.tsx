@@ -20,6 +20,7 @@ import { Checkbox } from '../components/Checkbox';
 import { IconButton } from '../components/iconbuttons/IconButton';
 import { Logo } from '../components/Logo';
 import { Select } from '../components/select/Select';
+import { Header } from '../components/header/header'
 
 export default function testPage() {
   const [checked, setChecked] = useState(false);
@@ -28,6 +29,7 @@ export default function testPage() {
   return (
     <ScrollView>
       <View style={globalStyles.container}>
+        <Header name="Dashboard"/>
         <Text style={globalStyles.title}>
           Essa Página é para testar componentes criados
         </Text>
