@@ -23,7 +23,8 @@ import { Select } from '../components/select/Select';
 import { Skeleton } from "../components/Skeleton/skeleton";
 import { Chip } from "../components/Chip/Chip";
 import { PreparationRow } from "../components/PreparationRow/PreparationRow";
-import { Header } from '../components/header/header'
+import { Header } from '../components/header/header';
+import { Banner } from "../components/Banner/Banner";
 
 export default function testPage() {
   const [checked, setChecked] = useState(false);
@@ -106,6 +107,30 @@ export default function testPage() {
           onChange={setCategoria}
         />
         
+          <Banner
+            tipo="info"
+            titulo="Informação"
+            mensagem="Este é um banner informativo."
+          />
+
+          <Banner
+            tipo="alerta"
+            titulo="Atenção"
+            mensagem="Verifique os dados informados."
+          />
+
+          <Banner
+            tipo="erro"
+            titulo="Erro"
+            mensagem="Não foi possível salvar os dados."
+          />
+
+          <Banner
+            tipo="sucesso"
+            titulo="Sucesso"
+            mensagem="Dados salvos com sucesso!"
+          />
+
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
           <Chip texto="Todas as Refeições" />
           <Chip texto="Setembro - 206" />
