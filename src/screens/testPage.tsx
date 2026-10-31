@@ -20,7 +20,11 @@ import { Checkbox } from '../components/Checkbox';
 import { IconButton } from '../components/iconbuttons/IconButton';
 import { Logo } from '../components/Logo';
 import { Select } from '../components/select/Select';
-import { Header } from '../components/header/header'
+import { Skeleton } from "../components/Skeleton/skeleton";
+import { Chip } from "../components/Chip/Chip";
+import { PreparationRow } from "../components/PreparationRow/PreparationRow";
+import { Header } from '../components/header/header';
+import { Banner } from "../components/Banner/Banner";
 
 export default function testPage() {
   const [checked, setChecked] = useState(false);
@@ -101,6 +105,51 @@ export default function testPage() {
           ]}
           value={categoria}
           onChange={setCategoria}
+        />
+        
+          <Banner
+            tipo="info"
+            titulo="Informação"
+            mensagem="Este é um banner informativo."
+          />
+
+          <Banner
+            tipo="alerta"
+            titulo="Atenção"
+            mensagem="Verifique os dados informados."
+          />
+
+          <Banner
+            tipo="erro"
+            titulo="Erro"
+            mensagem="Não foi possível salvar os dados."
+          />
+
+          <Banner
+            tipo="sucesso"
+            titulo="Sucesso"
+            mensagem="Dados salvos com sucesso!"
+          />
+
+        <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
+          <Chip texto="Todas as Refeições" />
+          <Chip texto="Setembro - 206" />
+          <Chip texto="Outubro - 2026" />
+        </View>
+
+        <Skeleton largura={100} altura={20} />
+        <br />
+        <Skeleton largura={200} altura={40} />
+        <br />
+        <Skeleton largura={300} altura={100} />
+
+        <PreparationRow
+          refeicao="Almoço"
+          preparacoes={[
+            "Arroz - 12%",
+            "Feijão - 10%",
+            "Carne - 4%"
+          ]}
         />
 
         <Text style={globalStyles.subtitle}>
