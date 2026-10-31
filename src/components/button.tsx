@@ -9,6 +9,7 @@ export const Button = ({ label, textStyle, ...rest }: ButtonProps) => {
     return (
         <TouchableOpacity style={globalStyles.button} activeOpacity={0.85} {...rest}>
             <Text style={[globalStyles.buttonText, textStyle]}>{label}</Text>
+
         </TouchableOpacity>
     )
 }
