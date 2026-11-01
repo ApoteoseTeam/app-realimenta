@@ -3,6 +3,8 @@ import { View, Text, ScrollView } from 'react-native';
 
 import { globalStyles } from '../theme/global';
 
+import { Stepper } from "../components/Stepper/index";
+
 // Ícones
 import {
   Bell,
@@ -43,6 +45,8 @@ export default function testPage() {
         <Text style={globalStyles.subtitle}>
           Nosso projeto Demo Day!
         </Text>
+
+        <Stepper currentStep={3} />
 
         <Text style={globalStyles.title}>Botão:</Text>
         <Button label="Cadastro" />
