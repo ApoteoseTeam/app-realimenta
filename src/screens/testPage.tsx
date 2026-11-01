@@ -25,10 +25,12 @@ import { Chip } from "../components/Chip/Chip";
 import { PreparationRow } from "../components/PreparationRow/PreparationRow";
 import { Header } from '../components/header/header';
 import { Banner } from "../components/Banner/Banner";
+import { SegmentedControl } from '../components/segmentedControl/segmentedControl';
 
 export default function testPage() {
   const [checked, setChecked] = useState(false);
   const [categoria, setCategoria] = useState('');
+  const [periodo, setPeriodo] = useState("Semana")
 
   return (
     <ScrollView>
@@ -133,7 +135,7 @@ export default function testPage() {
 
         <View style={{ flexDirection: "row", flexWrap: "wrap", gap: 8 }}>
           <Chip texto="Todas as Refeições" />
-          <Chip texto="Setembro - 206" />
+          <Chip texto="Setembro - 2026" />
           <Chip texto="Outubro - 2026" />
         </View>
 
@@ -150,6 +152,12 @@ export default function testPage() {
             "Feijão - 10%",
             "Carne - 4%"
           ]}
+        />
+
+        <SegmentedControl
+          opcoes={["Semana", "Mês"]}
+          selecionado={periodo}
+          aoSelecionar={setPeriodo}
         />
 
         <Text style={globalStyles.subtitle}>
